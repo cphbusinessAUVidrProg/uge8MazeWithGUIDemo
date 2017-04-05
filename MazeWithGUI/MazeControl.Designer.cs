@@ -1,13 +1,13 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form1
+    partial class MazeControl
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,20 +20,29 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // MazeControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.Name = "MazeControl";
+            this.Size = new System.Drawing.Size(368, 334);
+            this.Load += new System.EventHandler(this.MazeControl_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintMe);
+            this.Resize += new System.EventHandler(this.MazeControl_Resize);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
